@@ -1,0 +1,124 @@
+@font-face {
+  font-family: graffiti;
+  src: url(UrbanHeroes.ttf);
+}
+
+@font-face {
+  font-family: cream;
+  src: url(cream_2/cream-DEMO.ttf)
+}
+
+#background {
+  position:fixed;
+  right:0;
+  bottom:0;
+  z-index: -2;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+#name {
+color: #00A4b4;
+font-size: 100px;
+font-family:graffiti;
+letter-spacing: 0.15em;
+max-width: 100%;
+}
+
+.tab {
+  float:left;
+  width:30%;
+}
+
+.styletabs {
+  position:fixed;
+  right:0px;
+  top:0px;
+  width:40%;
+}
+
+.styletabs button {
+  color: #119251;
+  transition:0.3s;
+  border:none;
+  background-color: inherit;
+  font-size: 30px;
+  font-family: cream;
+}
+
+.styletabs button:hover {
+  color:#bc99f5;
+}
+
+.tab button {
+  color: #119251;
+  float:left;
+  transition:0.3s;
+  border:none;
+  background-color: inherit;
+  padding: 0px 30px 30px 0px;
+  font-size: 40px;
+  font-family: cream;
+}
+
+.tab button:hover {
+  color:#bc99f5;
+}
+
+.tabcontent {
+  color: #00A4b4;
+  float:right;
+  width:70%;
+  display:none;
+  animation: fadeEffect 1s;
+  font-size:20px;
+  font-family: cream;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity:1;}
+}
+
+.link {
+  color:#00A4b4;
+  text-decoration:none;
+  font-size: 30px;
+  font-family: cream;
+}
+
+.link:visited {
+  color:#00A4b4;
+  text-decoration:none;
+}
+
+.link:hover {
+  color:#bc99f5;
+  text-decoration:underline;
+}
+
+h2 {
+  padding-top: 0px;
+}
+
+.em {
+  font-size: 23px;
+}
+
+#contact {
+  min-width: 70%;
+  float:right;
+}
+
+img {
+  max-width: 90%;
+}
+
+iframe {
+  background-color: white;
+  color:#516DBA;
+  max-width: 700px;
+  max-height: 700px;
+}

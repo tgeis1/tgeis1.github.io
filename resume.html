@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Who..</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Tori, Geis, Resume, portfolio, mines, senior, computer, science">
+        <meta name="author" content="Tori Geis">
+        <link id="stylesheet" rel="stylesheet" type="text/css" href="resumea.css" />
+    </head>
+    <body id="body">
+        <script>
+            function openTab(pageName) {
+                var tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                document.getElementById(pageName).style.display = "block";
+            }
+
+            function changeStyle(styleChoice, background) {
+                var stylesheet=document.getElementById("stylesheet");
+                stylesheet.href=styleChoice;
+                document.getElementById("background").src=background;
+            }
+            
+        </script>
+        <video autoplay muted src="backgrounda.mp4" loop id="background"></video>
+        <h1 id="name">WHO IS TORI GEIS?</h1>
+
+        <div class="styletabs">
+            <button class="tablinks" id="styleabuttom" onclick="changeStyle('resumea.css', 'backgrounda.mp4')">Style A</button>
+            <button class="tablinks" id="stylebbuttom" onclick="changeStyle('resumeb.css', 'backgroundb.mp4')">Style B</button>
+            <button class="tablinks" id="stylecbuttom" onclick="changeStyle('resumec.css', 'backgroundc.mp4')">Style C</button>
+        </div>
+
+        <div class="tab">
+            <col>
+                <button class="tablinks" id="mebutton" onclick="openTab('me')">Me</button> <script>document.getElementById("defaultOpen").click();</script>
+                <button class="tablinks" id="plbutton" onclick="openTab('pl')">Languages</button>
+                <button class="tablinks" id="portbutton" onclick="openTab('port')" >Portfolio</button>
+                <button class="tablinks" id="whybutton" onclick="openTab('why')">Why?</button>
+                <button class="tablinks" id="contactbutton" onclick="openTab('contact')">Contact Me</button>
+            </col>
+        </div>
+
+        <div id="me" class="tabcontent">
+            <h1>Hi there, I'm Tori!</h1>
+            <h2>I am a senior computer science student at the Colorado School of Mines. I am seeking full time work following my graduation in May of 2023. I hope
+                to find a position where I can utilize my attention to detail and style. The company where I will best succeed is one that is friendly, expressive, and 
+                forward-thinking. 
+            </h2>
+        </div>
+
+        <div id="pl" class="tabcontent">
+            <h1>Programming Languages I'm Proficient In:</h1>
+            <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Kotlin</li>
+                <li>R</li>
+                <li>MDBootstrap</li>
+                <li>GLFW</li>
+                <li>GLM</li>
+                <li>GLEW</li>
+                <li>Assembly</li>
+                <li>PostreSQL</li>
+                <li>Linux</li>
+                <li>* PHP</li>
+                <li>* JQuery</li>
+            </ul>
+            <h2>Other Tools:</h2>
+            <ul>
+                <li>Google Places API</li>
+                <li>Amazon Web Services</li>
+            </ul>
+            <h3>* Learning this semester</h3>
+        </div>
+
+        <div id="port" class="tabcontent">
+            <h1>Glimpses of Past Projects</h1>
+            <h2>Helio Home, Summer 2022</h2>
+            <img src=HelioPic.png>
+            <iframe src="HelioCode.txt" frameBorder="0" style="width:90%; height:500px" scrolling="auto"></iframe>
+            <h2>This Website!</h2>
+            <iframe src="WebsiteCode.txt" frameBorder="0" style="width:90%; height:500px" scrolling="auto"></iframe>
+        </div>
+
+        <div id="why" class="tabcontent">
+            <h1>Why a website?</h1>
+            <p>The short answer to this question is that I didn't feel an 8.5 x 11 inch piece of paper could properly portray my assets.</p>
+            <p>The long answer is that I want to give you a glimpse of what I bring to the table: style, function, and detail. I have
+                but one problem with the way computer science is taught: it neglects the art of coding. My code is unique because
+                it has considered the most eloquent way to go about the issue. My code is <span class="em">beautiful.</span>
+            </p>
+            <p>I coded this website from scratch to show you what I am capable of. Enjoy, and be sure to check out the other 2 styles by clicking the links in the top right corner! </p>
+        </div>
+
+        <div id="contact" class="tabcontent">
+            <ul>
+                <li><a class="link" href="https://www.linkedin.com/in/tori-geis-39685b1a2/">LinkedIn</a></li>
+                <li><a class="link" href="https://github.com/tgeis1">GitHub</a></li>
+                <li><a class="link" href="mailto:tgeis@mines.edu">Email Me</a></li>
+            </ul>   
+        </div>
+
+    </body>
+
+</html>
